@@ -1,0 +1,409 @@
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Open Sans', sans-serif;
+     background-color: #FBFFB1;
+     font-weight: 300;
+     /* background-color: #98D7C2; */
+ }
+
+ html {
+     scroll-behavior: smooth;
+     scroll-padding-top: 82px;
+ }
+
+ .all-headers {
+    text-transform: capitalize;
+     margin-left: 2rem;
+    font-family: 'Playball', cursive;  
+     color:#c9ec1b;
+     font-size:2.2rem;
+     
+ }
+
+ /* top-header section starts here */
+ .top-header {
+     width: 100%;
+     height: 30px;
+     background: rgb(19, 19, 19);
+
+     /* border:2px solid red; */
+ }
+
+ .topbar {
+
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0.5rem 2rem;
+ }
+
+ .topbar a,
+ .timming {
+     text-decoration: none;
+     color: #fff;
+     font-size: 0.9rem;
+ }
+
+ /* top-header section Ends here */
+
+
+ /* Navigation Section starts here */
+ header {
+     position: sticky;
+     top: 0px;
+     z-index: 20;
+     background: #256940;
+
+ }
+
+ li {
+     list-style: none;
+ }
+
+ .nav-logo {
+     color: #ffff;
+     text-decoration: none;
+     font-size: 2rem;
+     padding: 0 1rem;
+ }
+
+ .nav-link {
+     color: #ffff;
+     text-decoration: none;
+     margin: 0 0.5rem;
+     transition: 0.7s ease;
+ }
+
+ .nav-link:hover {
+     color: rgb(23, 194, 194);
+     border-bottom: 2px solid #fff;
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 51px;
+     padding: 0 2rem;
+ }
+
+ .nav-menu {
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .hamburger {
+     display: none;
+     cursor: pointer;
+ }
+
+ .bar {
+     display: block;
+     background-color: #fff;
+     width: 27px;
+     height: 3px;
+     margin: 0.4rem;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+ }
+
+ /* Navigation Section Ends here */
+
+ /* image slider (hero section)  starts here */
+ .container {
+     display: flex;
+     /*just to bring the slider in center */
+     /* align-items: center; */
+     justify-content: center;
+     width: 100%;
+     height: 90vh;
+     /* background-color: rgb(24, 125, 92); */
+ }
+
+ .swiper {
+     /* border:2px solid red; */
+     width: 100%;
+     /*slider display width  */
+     height: 530px;
+     display: block;
+ }
+
+ .swiper-slide img {
+     width: 100%;
+     height: 100%;
+ }
+
+ .slider-2 img {
+     height: 530px;
+ }
+
+ .swiper .swiper-button-prev,
+ .swiper .swiper-button-next {
+     color: #ffff;
+ }
+
+ .swiper .swiper-pagination-bullet-active {
+     background-color: aqua;
+ }
+
+
+ .content {
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+ }
+
+ .header-content {
+     font-weight: 900;
+     text-transform: capitalize;
+     color: #fff;
+     text-shadow: rgb(50, 49, 49) 0px 10px 20px;
+     padding-bottom: 1.5rem;
+ }
+
+ .book-now {
+     background-color: aquamarine;
+     color: #111010;
+     padding: 8px 15px;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ /* image slider (hero section)  ends here */
+
+ /* About Us Section Starts Here */
+
+ .about-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     background: #609966;
+
+     padding: 2rem 0;
+     /* border:2px solid red */
+ }
+
+
+
+ .about-img {
+     /* flex: 1; */
+     padding: 1rem;
+ }
+
+ .about-img img {
+     height: 250px;
+
+ }
+
+ .about-text {
+     flex: 1;
+     padding: 1rem;
+     width: 80%;
+
+ }
+
+ .about-text p {
+     margin-bottom: 20px;
+ }
+
+ /* About Section Ends Here */
+
+ /* <!-- Services Section Starts Here --> */
+
+ .s-container {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     padding-bottom: 2rem;
+     margin: 0 auto;
+
+ }
+
+ .box {
+     width: 250px;
+     background-color: #ffff;
+     margin-top: 0.8rem;
+     margin-bottom: 1rem;
+     border-radius: 12px;
+     color: rgb(45, 44, 44);
+     padding-bottom: 1rem;
+     /* box-shadow: 0px 5px 18px rgb(231, 127, 116); */
+ }
+
+ .s-info {
+    font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     margin: 0 0 10px;
+     font-size: 14px;
+ }
+
+ .s-header {
+    font-family: 'Bitter', serif;
+    /* font-weight: 500; */
+    color:#609966;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 0.5rem;
+ }
+
+ .box img {
+     border-radius: 5px;
+     max-width: 100%;
+     width: 250px;
+     height: 200px;
+ }
+ /* <!-- Services Section Ends Here --> */
+ 
+ /* <!-- Testimonials section starts here --> */
+ .testimonial-slider {
+    background: #609966;
+    padding: 2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Style the testimonial slide image */
+  img.testimonial-image {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+     object-fit: cover; 
+   
+  }
+  /* Style the testimonial slide name */
+  .testimonial-name {
+    font-size: 24px;
+    font-weight: bold;
+    color:#333;
+    text-align:center;
+    margin-bottom:10px;
+  }
+
+  /* Style the testimonial slide text */
+  .testimonial-text {
+    font-size: 18px;
+    color:#ffff;
+    line-height: 1.5;
+    width:80%;
+    text-align: center;
+    margin:0 auto;
+    /* border:2px solid red; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width:768px) {
+
+     .hamburger {
+         display: block;
+     }
+
+     /* turning the hamburger icon to closing icon (easiest way) */
+     .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1) {
+         transform: translateY(10px) rotate(45deg);
+     }
+
+     .hamburger.active .bar:nth-child(3) {
+         transform: translateY(-9px) rotate(-45deg);
+     }
+
+     .nav-menu {
+         position: fixed;
+         left: -100%;
+         top: 70px;
+         width: 100%;
+         flex-direction: column;
+         background-color: #333;
+         text-align: center;
+         transition: 0.4s ease-in;
+     }
+
+     .nav-item {
+         margin: 1rem 0;
+     }
+
+     .nav-menu.active {
+         left: 0;
+     }
+
+
+ }

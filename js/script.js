@@ -39,20 +39,15 @@ const swiper = new Swiper('.swiper', {
 /* image slider (hero section)  ends here */
 
 // testimonials section starts here
-// Initialize Swiper JS
-var testimonialSlider = new Swiper('.testimonial-slider .swiper-container', {
-    // Add pagination and navigation buttons
+let testimonialSlider = new Swiper('.testimonial-slider .swiper-container', {
     pagination: {
-      el: '.testimonial-slider .swiper-pagination',
+      el: '.testimonial-pagination',
       clickable:true,
-    },
-    navigation: {
-      nextEl: '.testimonial-slider .swiper-button-next',
-      prevEl: '.testimonial-slider .swiper-button-prev'
     },
     // Set autoplay to loop through slides automatically
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
+      delay: 5000, 
+      disableOnInteraction: false,
     }
   });
+//   Testimonials section Ends here

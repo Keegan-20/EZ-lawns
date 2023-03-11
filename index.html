@@ -69,11 +69,12 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
+                    <a href="#contact-us" class="nav-link">Contact Us</a>
                 </li>
 
                 <li class="nav-item">
-                    <button id="book-now" role="button">Book Now</button>
+                    <a href="#contact-us">
+                    <button id="book-now" role="button">Book Now</button></a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -209,60 +210,187 @@
 
     <section id="testimonials">
         <h3 class="all-headers">Customer Reviews</h3>
-   
+    
         <div class="testimonial-slider">
             <div class="swiper-container testimonial-container">
                 <div class="swiper-wrapper testimonial-wrapper">
-
+    
                     <div class="swiper-slide testimonial-slide">
                         <img src="./img/test2.avif" alt="Testimonial 1" class="testimonial-image">
-                        <h3 class="testimonial-name">John Doe</h3>
-                          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                          posuere erat a ante. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos dolorem quisquam tempore quasi? "</p>
-
+                        <h3 class="testimonial-name">Kiara</h3>
+    
+                        <blockquote class="testimonial-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                posuere erat a ante. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                                quos dolorem quisquam tempore quasi? "</p>
+                        </blockquote>
+    
                     </div>
-
+    
                     <div class="swiper-slide testimonial-slide">
                         <img src="./img/test1.avif" alt="Testimonial 2" class="testimonial-image">
-                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <h3 class="testimonial-name">Conor</h3>
                         <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                            posuere erat a ante.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vero earum laudantium! "</p>
+                            posuere erat a ante.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vero
+                            earum laudantium! "</p>
                     </div>
-
-                    <div class="swiper-slide testimonial-slide">
+    
+                <div class="swiper-slide testimonial-slide">
                         <img src="./img/test3.avif" alt="Testimonial 2" class="testimonial-image">
-                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <h3 class="testimonial-name">Roger</h3>
                         <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                             posuere erat a ante."</p>
-                    </div>
+               </div>
                     <div class="swiper-slide testimonial-slide">
                         <img src="./img/test4.avif" alt="Testimonial 2" class="testimonial-image">
-                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <h3 class="testimonial-name">Tyson</h3>
                         <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                             posuere erat a ante."</p>
                     </div>
-
+    
                     <div class="swiper-slide testimonial-slide">
                         <img src="./img/test5-smileboy.avif" alt="Testimonial 2" class="testimonial-image">
-                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <h3 class="testimonial-name">Jude</h3>
                         <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                             posuere erat a ante."</p>
                     </div>
                     <!-- Add more testimonial slides as needed -->
                 </div>
                 <!-- Add pagination and navigation buttons if desired -->
-                <div class="swiper-pagination testimonial-pagination"></div>
-                <div class="swiper-button-next testimonial-button-next"></div>
-                <div class="swiper-button-prev testimonial-button-prev"></div>
+                 <div class="testimonial-pagination"></div>
+             </div>
+         </div>
+    </section>
+       <!-- Testimonials section Ends here -->
+
+    <!-- Contact Us Section Starts Here -->
+    <section id="contact-us">
+        <h3 class="all-headers">Contact Us</h3>
+
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-left">
+
+                    <form id="contact-form" method="POST">
+                        <h2 class="booking-header">Book Now</h2>
+
+                        <div class="row">
+                            <div class="column">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" id="name" placeholder="enter your full name" name="name"
+                                    autocomplete="off" required>
+                            </div>
+
+                            <div class="column">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="What can we help you with today? "
+                                    name="subject" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                      <div class="column">
+                       <label for="phone">Phone number:</label>
+                         <input type="tel" id="phone" placeholder="enter your phone No." name="phone" pattern="[0-9]{10}" autocomplete="off" required>
+                     </div>
+                      <div class="column">
+                     <label for="email">Email address:</label>
+                     <input type="email" id="email" placeholder="enter your email id (optional)" name="email"  autocomplete="off">
+                </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <label for="people">Number of People:</label>
+                                <input type="number" id="people" placeholder="how many people?" name="people" min="1"
+                                    max="100" required>
+                            </div>
+                            <div class="column">
+                                <label for="date">What is the date:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="text-area">
+                                <label for="message"> Any message:</label>
+                                <textarea id="message" placeholder="Type Here If There Are Any Enquiry..."
+                                    name="message" colums="20" rows="8" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="contact-right">
+                   <div class="reach-us">
+                   <h3>Reach Us</h3>
+                    <ul>
+                 
+                        <li>   
+                            <div ><i class="fa-solid fa-location-dot"></i> Address:       </div>          
+                            Opposite Soda Factory<br>Quelossim,<br> Cortalim,Goa
+
+                            <li><a href="https://goo.gl/maps/bgCwPLh1h1DDWNsP8" target="_blank" class="topbar-location">
+                                
+                                <button role="button" class="reachUs-address">Get Directions</button>  
+                            </a>
+                          </li>
+                        </li>
+                       
+                        
+                        <li>   
+                            <div ><i class="fa-solid fa-location-dot"></i> Phone No:       </div>          
+                               +91 8668768534
+                            <li><a href="tel:8668768534" class="topbar-phone">
+                         <Button role="button" class="reachUs-phone">Call Us</Button>
+                                </a>
+                        </li>
+                        </li>
+                              
+                        
+                         <li>
+                            <div class="reach-time">
+                            <i class="fa-solid fa-clock topbar-time"></i> 
+                                Mon-Sun <br> 7am to 8:30pm
+                            </div>
+                              
+                            </li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/yourdomain"><i class="fa fa-instagram"></i></a>
+                        <a href="mailto:contact@yourdomain.com"><i class="fa-solid fa-envelope"></i> </a>
+                        <a href="https://api.whatsapp.com/send?phone=8668768534"><i class="fa fa-whatsapp"></i></a>   
+                   
+                           </div>
+                        </div>  
+                   </div>
+                 </div>
             </div>
         </div>
-
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15395.670628328464!2d73.9638269!3d15.2722857!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb36be8a0866d%3A0xa0ecac0561919240!2sImperial%20Desserts!5e0!3m2!1sen!2sin!4v1677947662537!5m2!1sen!2sin" 
+            width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
     </section>
+    <!-- Contact Us Section Ends here  -->
 
+    <!-- Footer Section Starts Here -->
+    <section id="footer">
+     <footer class="footer">
+        <div class="footer-details">
+            <span>All Rights Reserved &copy;Ezbon's Lawns</span>
+            <span>Developed by <span class="developer">Keegan Colaco</span></span>
+        </div>  
+  </footer>
+</section>
+    <!-- Footer Section Ends Here -->
 
-
-
-
+     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85a7e9f6f5.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>

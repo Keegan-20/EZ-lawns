@@ -13,14 +13,15 @@
 
  html {
      scroll-behavior: smooth;
-     scroll-padding-top: 82px;
+     scroll-padding-top: 82px; 
  }
 
  .all-headers {
     text-transform: capitalize;
      margin-left: 2rem;
     font-family: 'Playball', cursive;  
-     color:#c9ec1b;
+     color:#333;
+     padding: 1rem;
      font-size:2.2rem;
      
  }
@@ -57,7 +58,9 @@
      position: sticky;
      top: 0px;
      z-index: 20;
-     background: #256940;
+     background:#1B4B2E;
+    /* background: #256940; */
+
 
  }
 
@@ -80,7 +83,7 @@
  }
 
  .nav-link:hover {
-     color: rgb(23, 194, 194);
+     color:rgb(146, 206, 57);
      border-bottom: 2px solid #fff;
  }
 
@@ -90,6 +93,23 @@
      align-items: center;
      min-height: 51px;
      padding: 0 2rem;
+ }
+
+ #book-now{
+    background-color:rgb(146, 206, 57);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-left: 1.2rem;
+    border-radius:30px;
+    box-shadow: 3px 10px 18px #1C4A1C;
+ }
+
+ #book-now:hover{
+    background-color:#5acd5a;
+    
+    
  }
 
  .nav-menu {
@@ -188,8 +208,8 @@
      align-items: center;
      justify-content: center;
      color: #fff;
-     background: #609966;
-
+     background:#1C4A1C;
+     border:1px solid yellow;
      padding: 2rem 0;
      /* border:2px solid red */
  }
@@ -228,7 +248,7 @@
      flex-wrap: wrap;
      padding-bottom: 2rem;
      margin: 0 auto;
-
+    
  }
 
  .box {
@@ -268,32 +288,36 @@
  
  /* <!-- Testimonials section starts here --> */
  .testimonial-slider {
-    background: #609966;
-    padding: 2rem;
+    background:#1C4A1C;
+    padding: 1rem 0;
+    border:1px solid yellow;
     width: 100%;
     overflow: hidden;
   }
 
-  /* Style the testimonial slide image */
+  .testimonial-slider .swiper-pagination-bullet{
+    background-color:#82CD47;
+    font-weight: 600;
+  }
+
+
   img.testimonial-image {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
      object-fit: cover; 
    
   }
-  /* Style the testimonial slide name */
   .testimonial-name {
     font-size: 24px;
     font-weight: bold;
-    color:#333;
+    color:#c1c752;
     text-align:center;
     margin-bottom:10px;
   }
 
-  /* Style the testimonial slide text */
   .testimonial-text {
     font-size: 18px;
     color:#ffff;
@@ -301,54 +325,223 @@
     width:80%;
     text-align: center;
     margin:0 auto;
-    /* border:2px solid red; */
+    font-family: 'Bitter', serif;
+    font-size:20px;
   }
 
+  .testimonial-pagination{
+    text-align: center;
+    margin:1rem auto;
+    color:#ffff;
+  }
+
+  /* Testimonials section Ends here */
+
+   /* Contact Us Section starts here */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 15px;
+}
+
+.contact-box {
+    background: #ffff;
+    display: flex;
+    width:90%;
+
+}
+
+.contact-left {
+    flex-basis: 60%;
+    flex-shrink: 1;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 2rem;
+    background: #FBFFB1;
+    box-shadow:8px 5px 23px coral;
+    color: #333;
+    border:none;
+}
+
+.booking-header{
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
 
 
+#contact-form {
+    max-width: 550px;
+    max-height: 550px;
+    padding: 1rem;
+    background-color: #ffff;
+    color: #82CD47;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.column {
+    flex-basis: 40%;
+}
 
 
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border:none;
+    border-bottom:1px solid grey;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+.text-area {
+    max-width: 100%;
+    overflow:auto;
+    display: flex;
+    padding: 8px;
+    border:none;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+input[placeholder] {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+}
+
+#contact-form button {
+    background-color: #1C4A1C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button[type="reset"] {
+    margin-left:21rem;
+}
+
+/* ReachUs section */
+.reach-us {
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.reach-us h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reach-us ul {
+    list-style: none;
+}
+
+.reach-us ul li {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
 
 
+.reach-us ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
 
+.reach-us .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgb(146, 206, 57);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
 
+.reachUs-phone,.reachUs-address{
+    background-color:#5acd5a;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius:30px;
+}
+.reachUs-address{
+    padding:0.5rem;
+}
 
+.reachUs-phone:hover,.reachUs-address:hover{
+    background-color:rgb(146, 206, 57);
+    
+}
+.reach-us .social-icons a:hover {
+    background-color: #666;
+}
 
+.reach-us .social-icons a i {
+    vertical-align: middle;
+}
 
+/* Contact Us Section Ends here */
 
+ /* Footer Section Starts Here  */
 
+.footer{
+    position: sticky;
+     top: 0px;
+     z-index: 20;
+     background:#1B4B2E;
+     padding: 1rem 0.5rem;
+}
 
+.developer{
+    color:#d4dd34;
 
+}
 
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffff;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+ 
+ /* Footer Section Ends Here  */
 
 
 

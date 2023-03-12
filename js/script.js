@@ -51,3 +51,40 @@ let testimonialSlider = new Swiper('.testimonial-slider .swiper-container', {
     }
   });
 //   Testimonials section Ends here
+
+//Contact Us section Starts here
+const popupContainer = document.getElementById('contact-container');
+const popupMessage = document.getElementById('popup-message');
+const contactForm = document.getElementById('contact-form');
+const closePopup = document.getElementById("close-popup");
+
+
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const response = await fetch('https://formspree.io/f/mwkjbjkr', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json'
+    },
+    body: formData
+  });
+  if (response.ok) {
+    contactForm.reset();
+    popupMessage.style.display = 'block';
+    setTimeout(() => {
+      popupMessage.style.display = 'none';
+
+    },5000);
+
+  } else {
+    alert('Error submitting form!');
+  }
+});
+
+//close button
+closePopup.addEventListener("click", () => {
+  popupMessage.style.display = "none";
+});
+

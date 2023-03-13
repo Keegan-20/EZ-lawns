@@ -52,9 +52,13 @@
          height: auto;
      }
      .slider-2 img {
-      height: 260px;
+      height: 250px;
      }
-     
+
+    
+    .swiper-pagination {
+     margin-bottom: 0.8rem;
+    }
      .content{
          left:60%;
      }

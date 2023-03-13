@@ -239,10 +239,9 @@
     bottom: 3px;
     height: 350px;
     transform: rotate(25deg);
-   
  }
 
- .about-text {
+ .about-text{
      flex: 1;
      flex-grow: 2;
      padding: 1rem 2.3rem;
@@ -250,7 +249,7 @@
      text-align: justify;
      overflow: hidden;
  }
-
+ 
  .about-text p {
      margin-bottom: 20px;
  }

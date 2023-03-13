@@ -85,6 +85,9 @@
       align-items: center;
       justify-content: center;
       padding: 1rem 0;
+     background: #3a953a;
+     box-shadow: none;
+      
     }
     .all-headers{
       margin-left:0.5rem;

@@ -29,14 +29,12 @@
  /* top-header section starts here */
  .top-header {
      width: 100%;
-     height: 30px;
+     height: 35px;
      background: rgb(19, 19, 19);
-
      /* border:2px solid red; */
  }
 
  .topbar {
-
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -48,6 +46,11 @@
      text-decoration: none;
      color: #fff;
      font-size: 0.9rem;
+ }
+
+ .topbar a:hover,
+ .timming:hover{
+    color:#3a953a;
  }
 
  /* top-header section Ends here */
@@ -102,8 +105,10 @@
     padding: 0.5rem 1rem;
     border: none;
     margin-left: 1.2rem;
+    margin-top: -4.8px;
     border-radius:30px;
-    box-shadow: 3px 10px 18px #1C4A1C;
+    font-weight: bold;
+    box-shadow: 3px 8px 23px #3a953a;
  }
 
  #book-now:hover{
@@ -138,12 +143,9 @@
  /* image slider (hero section)  starts here */
  .container {
      display: flex;
-     /*just to bring the slider in center */
-     /* align-items: center; */
      justify-content: center;
      width: 100%;
-     height: 90vh;
-     /* background-color: rgb(24, 125, 92); */
+     height: 85vh;
  }
 
  .swiper {
@@ -189,14 +191,27 @@
      padding-bottom: 1.5rem;
  }
 
- .book-now {
+ .slider-bookNow {
      background-color: aquamarine;
      color: #111010;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
      padding: 8px 15px;
      border: none;
      border-radius: 20px;
      cursor: pointer;
+     font-weight: bold;
      font-size: 16px;
+     text-decoration: none;
+     box-shadow: -3px -8px 18px teal;
+ }
+
+ .slider-bookNow:hover{
+    background-color: teal;
+ }
+
+ .slider-bookNow a{
+    text-decoration: none;
+    color:#333;
  }
 
  /* image slider (hero section)  ends here */
@@ -208,28 +223,30 @@
      align-items: center;
      justify-content: center;
      color: #fff;
-     background:#1C4A1C;
-     border:1px solid yellow;
+     overflow: hidden;
      padding: 2rem 0;
-     /* border:2px solid red */
- }
-
-
-
- .about-img {
-     /* flex: 1; */
-     padding: 1rem;
+     margin-bottom: 1rem;
+    background:#226222;
+    box-shadow:8px 5px 23px coral;
  }
 
  .about-img img {
-     height: 250px;
-
+    position: relative;
+    left: 2px;
+    bottom: 3px;
+    height: 350px;
+    transform: rotate(25deg);
+   
  }
 
  .about-text {
      flex: 1;
-     padding: 1rem;
-     width: 80%;
+     flex-grow: 2;
+     padding: 1rem 2.3rem;
+     max-width: 100%;
+     text-align: justify;
+     /* border:2px solid red; */
+
 
  }
 
@@ -292,6 +309,7 @@
     padding: 1rem 0;
     border:1px solid yellow;
     width: 100%;
+    margin-bottom: 0.8rem;
     overflow: hidden;
   }
 
@@ -307,7 +325,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-     object-fit: cover; 
+    object-fit: cover; 
    
   }
   .testimonial-name {
@@ -379,6 +397,7 @@
     max-width: 560px;
     max-height: 565px;
     padding: 1rem;
+    padding-left: 1.9rem;
     background-color: #ffff;
     color: #82CD47;
 }
@@ -582,68 +601,14 @@ input[type="email"] {
 
 }
 
+.footer-details span{
+    text-align: center;
+}
 .footer-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:#ffff;
+
 }
  /* Footer Section Ends Here  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- @media only screen and (max-width:768px) {
-
-     .hamburger {
-         display: block;
-     }
-
-     /* turning the hamburger icon to closing icon (easiest way) */
-     .hamburger.active .bar:nth-child(2) {
-         opacity: 0;
-     }
-
-     .hamburger.active .bar:nth-child(1) {
-         transform: translateY(10px) rotate(45deg);
-     }
-
-     .hamburger.active .bar:nth-child(3) {
-         transform: translateY(-9px) rotate(-45deg);
-     }
-
-     .nav-menu {
-         position: fixed;
-         left: -100%;
-         top: 70px;
-         width: 100%;
-         flex-direction: column;
-         background-color: #333;
-         text-align: center;
-         transition: 0.4s ease-in;
-     }
-
-     .nav-item {
-         margin: 1rem 0;
-     }
-
-     .nav-menu.active {
-         left: 0;
-     }
-
-
- }

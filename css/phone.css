@@ -49,6 +49,10 @@
      
      .swiper-slide img{
          width:100%;
+         height: auto;
+     }
+     .slider-2 img {
+      height: 260px;
      }
      
      .content{

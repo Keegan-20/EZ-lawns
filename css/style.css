@@ -228,7 +228,7 @@
      padding: 2rem 0;
      margin-bottom: 1rem;
     background:#226222;
-    box-shadow:8px 5px 23px coral;
+    /* box-shadow:8px 0px 23px coral; */
  }
 
  .about-img img {
@@ -383,7 +383,7 @@
     flex-basis: 40%;
     padding: 2rem;
     background: #FBFFB1;
-    box-shadow:8px 5px 23px coral;
+    /* box-shadow:8px 5px 23px coral; */
     color: #333;
     border:none;
 }

@@ -13,7 +13,7 @@
 
  html {
      scroll-behavior: smooth;
-     overflow: hidden;
+     overflow-x:hidden;
      scroll-padding-top: 82px; 
  }
 

@@ -228,10 +228,12 @@
      padding: 2rem 0;
      margin-bottom: 1rem;
     background:#226222;
-    /* box-shadow:8px 0px 23px coral; */
+    /* border:2px solid red; */
+    box-shadow:8px 0px 23px coral;
  }
 
  .about-img img {
+    overflow: hidden;
     position: relative;
     left: 2px;
     bottom: 3px;
@@ -246,9 +248,7 @@
      padding: 1rem 2.3rem;
      max-width: 100%;
      text-align: justify;
-     /* border:2px solid red; */
-
-
+     overflow: hidden;
  }
 
  .about-text p {
@@ -365,6 +365,8 @@
     width: 95%;
     margin: 20px auto;
     margin-bottom: 15px;
+    box-shadow:8px 0px 23px coral;
+
 }
 
 .contact-box {

@@ -52,7 +52,7 @@
      }
      
      .slider-2  img{
-         height:250px;
+         height:530px;
      }
      
      .content{
@@ -130,20 +130,18 @@
 
     #contact-container {
       flex-direction: column;
-      margin: 20px 0;
     }
  
   
     .contact-box {
       flex-direction: column;
       width: 100%;
-      margin-left:1.2rem;
+      /* margin-left:1.2rem; */
     }
     
     .contact-left {
       flex-basis: auto;
-      margin-bottom: 17rem;
-      width:117%;
+      margin-bottom: 16rem;
     }
 
 
@@ -172,12 +170,11 @@
     .contact-right {
       flex-basis: auto;
       padding: 1rem;
-      margin-bottom: 20px;
     }
     
     #contact-form {
       width:77%;
-      padding-left:2.3rem;
+      padding-left:0.3rem;
       margin-left: 1rem;
     }
     
@@ -252,4 +249,42 @@
       margin-left: 2rem;
     }
 
+}
+
+
+@media screen and (max-width: 576px) {
+  .about-img img {
+    height: 200px;
+  }
+
+  .about-text {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .about-img img {
+    height: 250px;
+  }
+
+  .about-text {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about-img img {
+    height: 300px;
+  }
+
+  .about-text {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .about-img img {
+    height: 350px;
+  }
 }

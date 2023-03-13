@@ -8,12 +8,12 @@
     font-family: 'Open Sans', sans-serif;
      background-color: #FBFFB1;
      font-weight: 300;
+     overflow-x:hidden;
      /* background-color: #98D7C2; */
  }
 
  html {
      scroll-behavior: smooth;
-     overflow-x:hidden;
      scroll-padding-top: 82px; 
  }
 

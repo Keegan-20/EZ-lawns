@@ -84,12 +84,10 @@
 
   .about-text {
     padding: 1rem 2rem;
-    flex-direction: column;
   }
 
   .about-img img {
     height:200px;
-    flex-direction: column;
   }
 
   #contact-form button[type="reset"] {

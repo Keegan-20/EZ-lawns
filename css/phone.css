@@ -76,6 +76,30 @@
          display: none;
       }
  }
+ 
+@media (max-width:900px) {
+  .container{
+    height:auto;
+  }
+
+  .about-text {
+    padding: 1rem 2rem;
+    flex-direction: column;
+  }
+
+  .about-img img {
+    height:200px;
+    flex-direction: column;
+  }
+
+  #contact-form button[type="reset"] {
+    margin-left: 10rem;
+}
+
+
+
+}
+
   /* hero(slider) mobile section Ends here */
 
 @media (max-width: 768px) {
@@ -253,7 +277,7 @@
     }
 
     #contact-form button[type="reset"] {
-      margin-left: 2rem;
+      margin-left: 4rem;
     }
 
 }
@@ -280,18 +304,3 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .about-img img {
-    height: 300px;
-  }
-
-  .about-text {
-    padding: 1rem 2rem;
-  }
-}
-
-@media screen and (min-width: 993px) {
-  .about-img img {
-    height: 350px;
-  }
-}
